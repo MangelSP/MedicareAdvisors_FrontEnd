@@ -301,7 +301,6 @@ export class DashboardPage implements OnInit {
   getKpiForContact() {
     this.isLoading = true;
     this.kpiService.getKpiForContact().subscribe(response => {
-      console.log(response.data);
 
       this.kpiContact = response.data;
       this.isLoading = false;

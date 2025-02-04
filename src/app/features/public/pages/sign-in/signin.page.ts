@@ -48,9 +48,6 @@ export class SignInPage implements OnInit {
           this.snackbarService.presentToastDanger('Error al iniciar sesión');
 
         }
-        //this.router.navigate(['/private']);
-        console.log(response);
-
       });
     }
   }

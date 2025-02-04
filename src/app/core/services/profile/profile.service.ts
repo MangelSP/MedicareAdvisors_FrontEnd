@@ -24,7 +24,6 @@ export class ProfileService {
   }
 
   login(loginData: any): Observable<any> {
-    console.log(loginData);
 
     return this.http.PostRequest('api/profile/login', loginData);
   }

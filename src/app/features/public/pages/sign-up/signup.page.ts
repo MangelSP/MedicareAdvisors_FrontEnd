@@ -104,7 +104,6 @@ export class SignUpPage implements OnInit {
       });
     } else {
       this.isLoading = false;
-      console.log(this.profileForm.value);
       this.snackbarService.presentToastDanger('form invalid');
 
     }

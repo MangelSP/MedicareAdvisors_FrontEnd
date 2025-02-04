@@ -34,7 +34,6 @@ export class AuthService {
         tap((response: LoginResponse) => {
           if (response.status === 'success' && response.data.length > 0) {
             const userData = response.data[0];
-            console.log(userData);
             localStorage.setItem('authToken', 'token');
             localStorage.setItem('username', userData.UserName);
             localStorage.setItem('name', userData.Name);
@@ -55,7 +54,6 @@ export class AuthService {
     localStorage.removeItem('name');
     localStorage.removeItem('userId');
     this.loggedIn = false;
-    console.log(this.isLoggedIn());
 
 
   }
